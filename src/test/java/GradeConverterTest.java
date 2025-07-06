@@ -31,4 +31,11 @@ public class GradeConverterTest {
     public void testWrongInvalid() {
         assertEquals("E", converter.convert(-10));  // sai, -10 là "Invalid"
     }
+    @Test
+    public void testConvertnew()
+    {
+        String expeced = "Invalid";
+        String actual = converter.convert(-10);
+        assertEquals(expeced, actual);
+    }
 }
